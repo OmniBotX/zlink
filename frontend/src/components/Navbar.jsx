@@ -42,9 +42,13 @@ export const Navbar = () => {
                   </Link>
                 </li>
               )}
+
+
               <li>
                 <Link to={"/settings"}>Settings</Link>
               </li>
+
+
               {authUser && (
                 <li>
                   <button onClick={logout}>Logout</button>
