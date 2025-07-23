@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useAuthStore } from "../store/useAuthStore";
 
 export const Navbar = () => {
-  const { logout, authUser } = useAuthStore();
+  const { logout, authUser, profilePic } = useAuthStore();
 
   return (
     <header>
@@ -27,7 +27,7 @@ export const Navbar = () => {
               <div className="w-10 rounded-full">
                 <img
                   alt="Tailwind CSS Navbar component"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  src={authUser?.profilePic || "/avatar.png"}
                 />
               </div>
             </div>
@@ -43,11 +43,9 @@ export const Navbar = () => {
                 </li>
               )}
 
-
               <li>
                 <Link to={"/settings"}>Settings</Link>
               </li>
-
 
               {authUser && (
                 <li>
