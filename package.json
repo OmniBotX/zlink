@@ -1,29 +1,13 @@
 {
-  "dependencies": {
-    "@google-cloud/translate": "^9.2.0",
-    "@jitsi/react-sdk": "^1.4.4",
-    "concurrently": "^9.1.2",
-    "lucide-react": "^0.525.0"
-  },
+  "name": "z link",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "npm run start --prefix backend"
   },
-  "name": "zlink",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OmniBotX/zlink.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/OmniBotX/zlink/issues"
-  },
-  "homepage": "https://github.com/OmniBotX/zlink#readme"
+  "license": "ISC"
 }
