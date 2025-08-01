@@ -1,96 +1,97 @@
-# Z-Link Chat Application 🚀
+# 🚀 Z-Link Chat Application
 
-A feature-rich real-time chat application built with MERN stack (MongoDB, Express.js, React, Node.js) and Socket.IO. Experience seamless communication with modern UI and robust functionality.
+A **feature-rich real-time chat application** built with the **MERN stack** (MongoDB, Express.js, React, Node.js) and **Socket.IO**. Z-Link offers seamless communication, modern UI, and robust functionality for personal and professional messaging.
 
-![Z-Link Preview](preview.png)
+![Z-Link Preview](preview-image-url) <!-- Replace with actual image URL -->
+
+---
 
 ## ✨ Key Features
 
-### 🔒 Authentication & Authorization
+### 🔐 Authentication & Security
 
-- **Secure User Registration**: Email and password-based signup with validation
-- **JWT Authentication**: Secure token-based authentication system
-- **Protected Routes**: Authorized access to chat features
-- **Remember Me**: Persistent login sessions
-- **Password Security**: Encrypted storage using bcrypt
+- **Secure Signup/Login**: Email & password authentication with validation
+- **JWT Authentication**: Token-based system with HTTP-only cookies
+- **Protected Routes**: Only authorized users can access chats
+- **Persistent Sessions**: "Remember Me" functionality
+- **Password Encryption**: Secure with bcrypt
 
 ### 💬 Real-time Messaging
 
-- **Instant Chat**: Real-time message delivery using Socket.IO
-- **Message Status**: Read/unread indicators
+- **Instant Chat**: Real-time delivery with Socket.IO
 - **Typing Indicators**: See when others are typing
-- **Online Status**: Real-time user presence detection
-- **Message History**: Persistent chat history with pagination
-- **Media Sharing**: Support for images and emojis
+- **Online Status**: Live user presence updates
+- **Read Receipts**: Message status (read/unread)
+- **Message History**: Persistent, paginated conversations
+- **Media Sharing**: Images, emojis, and attachments
 - **Message Actions**: Edit, delete, and react to messages
 
-### 👤 User Profile Features
+### 👤 User Profiles
 
-- **Custom Avatars**: Upload and manage profile pictures
-- **Profile Customization**: Edit username, bio, and status
-- **Cloud Storage**: Cloudinary integration for media storage
-- **User Settings**: Customize notification preferences
-- **User Search**: Find and connect with other users
+- **Custom Avatars**: Upload/manage profile pictures
+- **Profile Info**: Username, bio, and status
+- **Cloud Storage**: Media storage via Cloudinary
+- **User Settings**: Notification and theme preferences
+- **User Search**: Find and connect with others
 
-### 🎨 UI/UX Features
+### 🎨 UI/UX
 
-- **Responsive Design**: Works seamlessly on desktop and mobile
-- **Theme Options**:
-  - Light/Dark mode toggle
-  - Custom color schemes
-  - Persistent theme preferences
+- **Responsive Design**: Optimized for desktop & mobile
+- **Themes**:
+  - Light/Dark Mode
+  - Custom color palettes
+  - Theme preferences saved across sessions
 - **Modern Interface**:
-  - Clean and intuitive design
   - Smooth animations
-  - Loading states and skeletons
+  - Loading skeletons
   - Toast notifications
 
-## 🛠️ Technical Implementation
+---
 
-### Frontend Architecture
+## 🛠️ Tech Stack & Architecture
 
-- **React.js + Vite**: Lightning-fast development and build times
+### 📦 Frontend
+
+- **React.js + Vite**: Fast and lightweight development
 - **State Management**:
-  - Zustand for global state
-  - Context API for theme management
+  - Zustand (global state)
+  - Context API (theme)
 - **Styling**:
-  - Tailwind CSS for utility-first styling
-  - DaisyUI for pre-built components
-- **Real-time Updates**: Socket.IO client integration
-- **API Integration**: Axios for RESTful requests
-- **Routing**: React Router v7 with protected routes
+  - Tailwind CSS (utility-first)
+  - DaisyUI (component library)
+- **Routing**: React Router v7 (with protection)
+- **API Handling**: Axios
+- **Real-time**: Socket.IO client
 
-### Backend Infrastructure
+### 🌐 Backend
 
-- **Node.js & Express**: RESTful API architecture
+- **Node.js + Express**: REST API setup
 - **Database**:
-  - MongoDB with Mongoose ODM
-  - Efficient data modeling
-  - Indexed queries for performance
-- **Real-time Engine**:
-  - Socket.IO for bi-directional communication
-  - Event-based message handling
+  - MongoDB with Mongoose
+  - Efficient schemas and indexed queries
+- **Socket.IO**: Event-based real-time engine
 - **Security**:
-  - JWT token authentication
-  - HTTP-only cookies
+  - JWT Auth
   - CORS protection
   - Rate limiting
-- **File Handling**:
+- **File Uploads**:
   - Cloudinary integration
   - Image optimization
-  - Secure file uploads
+  - Secure media handling
+
+---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### ✅ Prerequisites
 
-- Node.js (v14 or higher)
+- Node.js (v14+)
 - MongoDB
 - Cloudinary account
 
-### Environment Setup
+### ⚙️ Environment Setup
 
-Create `.env` file in backend directory:
+Create a `.env` file inside the `backend/` directory:
 
 ```env
 PORT=5001
@@ -101,79 +102,89 @@ CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
 ```
 
-### Installation Steps
+### 📥 Installation
 
-1. **Clone and Install**
-
-```sh
-git clone https://github.com/yourusername/zlink.git
+```bash
+# Clone the repo
+git clone https://github.com/OmniBotX/zlink.git
 cd zlink
 
-# Backend setup
+# Backend
 cd backend
 npm install
 
-# Frontend setup
+# Frontend
 cd ../frontend
 npm install
 ```
 
-2. **Start Development Servers**
+### ▶️ Run Development Servers
 
-```sh
-# Backend
+```bash
+# Start backend server
 cd backend
 npm run dev
 
-# Frontend
-cd frontend
+# Start frontend server
+cd ../frontend
 npm run dev
 ```
 
+---
+
 ## 📱 Usage Examples
 
-### Authentication Flow
+### 🔑 Authentication Flow
 
-1. Register with email/password
-2. Login with credentials
-3. Access protected chat features
+1. Register with email and password
+2. Login to get secure access
+3. Stay logged in across sessions
 
-### Messaging
+### 💬 Chatting
 
 1. Select a contact
-2. Type message in chat input
-3. Send text or upload images
-4. View message status
-5. React to messages
+2. Send text or media
+3. See read status and typing indicator
+4. Edit, delete, or react to messages
 
-### Profile Management
+### 👤 Profile Management
 
 1. Upload profile picture
-2. Edit profile information
-3. Set online/offline status
-4. Customize app settings
+2. Update username, bio, and status
+3. Change theme preferences and notifications
+
+---
 
 ## 🤝 Contributing
 
-We welcome contributions! Please follow these steps:
+We welcome community contributions! Here's how to get started:
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+```bash
+# Fork the repo
+# Create a branch
+git checkout -b feature/YourFeature
+
+# Make changes and commit
+git commit -m "Add YourFeature"
+
+# Push to your branch
+git push origin feature/YourFeature
+
+# Open a pull request
+```
+
+---
 
 ## 📄 License
 
-This project is licensed under the ISC License.
+This project is licensed under the **ISC License**.
+
+---
 
 ## 👥 Contact & Support
 
-- Creator: [Your Name]
-- Email: [your.email@example.com]
-- Twitter: [@yourusername]
-- Project Link: [https://github.com/yourusername/zlink]
-
----
+- **Creator**: OmniBotX
+- **GitHub**: [OmniBotX](https://github.com/OmniBotX)
+- **Project Link**: [Z-Link on GitHub](https://github.com/OmniBotX/zlink)
 
 Made with ❤️ by OmniBotX
